@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>I Am Proud Of You</title>
+<style>
+  
+  /* Reset some default styles */
+  body, h1, nav, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+  }
+
+  /* Fullscreen video background */
+  #backgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 50px;
+    min-height: 50px;
+    object-fit: cover;
+    z-index: -1; /* Behind page content */
+  }
+
+  /* Page layout */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height:50vh;
+    color: white;
+  }
+
+  
+  header {
+    background-color: rgba(229, 235, 231, 0.85); /* Slight transparency */
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    height: 120px;
+    
+  }
+
+  header h1 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #1e5534;
+    line-height: 1.3;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  nav a, nav button {
+    font-family: 'Arial', sans-serif;
+    color: #1a5f35;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  nav button {
+    background-color: #9cc2bd;
+    color: #094f1d;
+    font-weight: 600;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+    font-size: 18px;      /* Increase text size /                           / Increase clickable area */
+    min-width: 200px;     /* Minimum width for buttons */
+    height: 45px;         /* Fixed height for uniformity */
+    border-radius: 10px;
+  }
+
+  nav button:hover {
+    background-color: #7da297;
+  }
+
+  
+
+ 
+</style>
+</head>
+<body>
+
+<!-- Background Video -->
+<video autoplay muted loop id="backgroundVideo">
+  <source src="plswork - Trim.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<header>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <a href="#">
+    <img src="mylogo.png" alt="I Am Proud Of You Logo" style="height: 120px; object-fit: contain;" />
+  </a>
+
+  <nav>
+    <div id="top"></div>
+    <a href="file:///C:/Users/Ali/Desktop/IAmProudOfYou/templates/index.html">Home</a>
+    <a href="file:///C:/Users/Ali/Desktop/IAmProudOfYou/templates/about-us.html">About Us</a>
+    <a href="file:///C:/Users/Ali/Desktop/IAmProudOfYou/templates/services.html">Services</a>
+    <a href="file:///C:/Users/Ali/Desktop/IAmProudOfYou/templates/blog.html">Blog</a>
+    <a href="file:///C:/Users/Ali/Desktop/IAmProudOfYou/templates/founder.html">Founder</a>
+    <a href="file:///C:/Users/Ali/Desktop/IAmProudOfYou/templates/quote.html" id="quote-for-you">Quote for you</a>
+    
+
+  </nav>
+</header>
+
+<body>
+  <div class="heading1">
+  <h1>Your Mental Wellness Journey Starts Here</h1>
+  </div>
+  <div class="paragraph1">
+    <p>AI-POWERED THERAPY SUPPORT</p>
+    </div>
+    <div class="start-button">
+    <a id="start-therapy-btn" href="https://iamproudofyou-icarechatbotcompanion.streamlit.app/" target="_blank">
+     Start Therapy Now
+    </a>
+    </div>
+<section class="white-block">
+  <div class="heading2">
+    <h1>Revolutionizing Support</h1>
+  </div>
+   <div class="paragraph2">
+    <p>AI-driven therapy solutions tailored for you.</p>
+  </div>
+  <div class="photo1"></div>
+  <div class="heading3">
+    <h1>Interactive Therapy Sessions</h1>
+  </div>
+   <div class="paragraph3">
+    <p>Engage in dynamic and interactive sessions with our AI, designed to help you explore your feelings and thoughts in a safe environment. These sessions promote growth and resilience by guiding you through various coping techniques.</p>
+  </div>
+
+</section>
+ <footer class="footer">
+<div class="heading4">
+  <h1>Made by Syeda Hafsa Bilal</h1>
+</div>
+<div class="paragraph4">
+  <p>-  made with love </p>
+</div>
+<div class="text">
+  <p>© 2025 I Am Proud Of You. All rights reserved.</p>
+</div>
+  </footer>
+</body>
+</html>
