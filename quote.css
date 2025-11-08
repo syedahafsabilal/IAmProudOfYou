@@ -1,0 +1,34 @@
+ #quote-for-you {
+  background-color: #127227;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+#quote-for-you:hover {
+  background-color: #11631d;
+}
+
+    body {
+     background-image: url('download (1).jpg'); /* use your exact image name */
+     background-size: cover;        /* makes it fill the screen */
+     background-position: center 130px;   /* keeps image centered */
+     background-repeat: no-repeat;  /* stops tiling */
+     height: 150vh;                 /* full height */
+     margin: 0;                     /* removes white edges */
+     
+      }
+   
+
+    #quoteBox {
+      margin-top: 400px;
+      padding: 30px;
+      border-radius: 12px;
+      font-size: 20px;
+      text-align: center;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      
+      background-color: pink;
+    }

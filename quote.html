@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="quote.css" />
+<header>
+  <a href="#">
+    <img src="mylogo.png" alt="I Am Proud Of You Logo" style="height: 120px; object-fit: contain;" />
+  </a>
+
+  <nav>
+    <div id="top"></div>
+    <a href="file:///C:/Users/Ali/Desktop/IAmProudOfYou/templates/index.html">Home</a>
+    <a href="file:///C:/Users/Ali/Desktop/IAmProudOfYou/templates/about-us.html">About Us</a>
+    <a href="file:///C:/Users/Ali/Desktop/IAmProudOfYou/templates/services.html">Services</a>
+    <a href="file:///C:/Users/Ali/Desktop/IAmProudOfYou/templates/blog.html">Blog</a>
+    <a href="file:///C:/Users/Ali/Desktop/IAmProudOfYou/templates/founder.html">Founder</a>
+    <a href="file:///C:/Users/Ali/Desktop/IAmProudOfYou/templates/quote.html" id="quote-for-you">Quote for you</a>
+    
+  </nav>
+</header>
+  <style>
+   
+    body, h1, nav, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    }
+    
+    header {
+    background-color: rgba(229, 235, 231, 0.85); /* Slight transparency */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+     }
+     header h1 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #e9f6ee;
+    line-height: 1.3;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  nav a, nav button {
+    font-family: 'Arial', sans-serif;
+    color: #1a5f35;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  nav button {
+    background-color: #9cc2bd;
+    color: #155d29;
+    font-weight: 600;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+    font-size: 18px;      /* Increase text size */                           /* Increase clickable area */
+    min-width: 200px;     /* Minimum width for buttons */
+    height: 45px;         /* Fixed height for uniformity */
+    border-radius: 10px;
+  }
+
+  nav button:hover {
+    background-color: #7da297;
+  }
+
+  main {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 50px 50px;
+    position: relative;
+    z-index: 1;
+  }
+
+  main h2 {
+    font-weight: bold;
+    font-size: 2.8rem;
+    margin-bottom: 0.2rem;
+  }
+
+  main p {
+    font-size: 0.9rem;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+  }
+  main {
+  display: flex;
+  flex-direction: column;    /* Keep vertical stacking of content */
+  justify-content: center;   /* Center items vertically */
+  align-items: center;       /* Center items horizontally */
+  text-align: center;
+  height: auto;
+  }
+  
+    @media screen and (max-width: 600px) {
+    main h2 {
+      font-size: 2rem;
+    }
+
+    header {
+      padding: 15px 20px;
+    }
+
+    nav {
+      gap: 10px;
+    }
+
+    nav a, nav button {
+      font-size: 0.9rem;
+    }
+
+    main button#book-now-btn {
+      padding: 8px 18px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  </style> 
+</head>
+<body>
+
+  <div id="quoteBox"></div>
+
+  <script>
+    const quotes = [
+      { arabic: "اللَّهُ لَا يُكَلِّفُ نَفْسًا إِلَّا وُسْعَهَا", translation: "Allah does not burden a soul beyond that it can bear. 📖 (Surah Al-Baqarah 2:286)" },
+      { arabic: "فَإِنَّ مَعَ الْعُسْرِ يُسْرًا", translation: "For indeed, with hardship comes ease. 📖 (Surah Ash-Sharh 94:5–6)" },
+      { arabic: "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ", translation: "Indeed, Allah is with those who are patient. 📖 (Surah Al-Baqarah 2:153)" },
+      { arabic: "لَا تَقْنَطُوا مِن رَّحْمَةِ اللَّهِ", translation: "Do not despair of the mercy of Allah. 📖 (Surah Az-Zumar 39:53)" },
+      { arabic: "إِنَّ اللَّهَ يُحِبُّ الْمُحْسِنِينَ", translation: "Indeed, Allah loves the doers of good. 💖 (Surah Al-Baqarah 2:195)" },
+      { arabic: "أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ", translation: "Surely, in the remembrance of Allah do hearts find rest. 📖 (Surah Ar-Ra'd 13:28)" },
+      { arabic: "وَهُوَ مَعَكُمْ أَيْنَ مَا كُنتُمْ", translation: "And He is with you wherever you are. 🌸 (Surah Al-Hadid 57:4)" },
+      { arabic: "وَنَحْنُ أَقْرَبُ إِلَيْهِ مِنْ حَبْلِ الْوَرِيدِ", translation: "And We are closer to him than [his] jugular vein. ❤️ (Surah Qaf 50:16)" },
+      { arabic: "إِنِّي مَعَكُمَا أَسْمَعُ وَأَرَىٰ", translation: "Indeed, I am with you both; I hear and I see. (Surah Taha 20:46)" },
+      { arabic: "وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ", translation: "And whoever puts their trust in Allah – He is sufficient for them. 🌿 (Surah At-Talaq 65:3)" },
+      { arabic: "لَا تَحْزَنْ إِنَّ اللَّهَ مَعَنَا", translation: "Do not be sad; indeed Allah is with us. 🤍 (Surah At-Tawbah 9:40)" },
+
+    ];
+
+    // Pick a random quote when the page loads
+    function showRandomQuote() {
+      const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+      const quoteBox = document.getElementById("quoteBox");
+      quoteBox.innerHTML = `<b>${randomQuote.arabic}</b><br><br>${randomQuote.translation}`;
+    }
+
+    // Show a new quote each time the page opens
+    window.onload = showRandomQuote;
+  </script>
+
+</body>
+</html>

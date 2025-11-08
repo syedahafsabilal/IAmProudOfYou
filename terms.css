@@ -1,0 +1,242 @@
+#quote-for-you {
+  background-color: #127227;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+#quote-for-you:hover {
+  background-color: #11631d;
+}
+.TermsofUse {
+    color:#1a5f35;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    top:50px;
+    left:250px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.afterheading {
+    color:black;
+    font-family: initial;
+    font-style: bold;
+    font-size: 12px;
+    position: relative;
+    top:100px;
+    left:250px;
+}
+
+.paragraph1 {
+    color:black;
+    font-family: initial;
+    font-style: bold;
+    font-size: 10px;
+    position: relative;
+    top:130px;
+    right:10px;
+    font-size: 20px;
+    max-width: 1000px;  /* adjust width as you like */
+    margin: 0 auto;    /* centers the paragraph */
+    line-height: 1.6;  /* better readability */
+    text-align: justify; /* optional: makes text neat */
+}
+
+.heading2 {
+    color:#1a5f35;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    top:150px;
+    left:250px;
+    font-size: 13px;
+    
+}
+
+
+.paragraph2 {
+    color:black;
+    font-family: serif;
+    font-style: bold;
+    font-size: 10px;
+    position: relative;
+    top:150px;
+    left:-7px;
+    font-size: 20px;
+    font-style: bold;
+    max-width: 1000px;  /* adjust width as you like */
+    margin: 0 auto;    /* centers the paragraph */
+    line-height: 1.6;  /* better readability */
+    text-align: justify; /* optional: makes text neat */
+}
+
+.heading2 {
+    color:#1a5f35;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    top:150px;
+    left:250px;
+    font-size: 13px;
+    
+}
+
+.heading3 {
+    color:#1a5f35;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    top:190px;
+    left:250px;
+    font-size: 13px;
+    
+}
+
+
+.paragraph3 {
+    color:black;
+    font-family: serif;
+    font-style: bold;
+    font-size: 10px;
+    position: relative;
+    top:200px;
+    left:-7px;
+    font-size: 20px;
+    max-width: 1000px;  /* adjust width as you like */
+    margin: 0 auto;    /* centers the paragraph */
+    line-height: 1.6;  /* better readability */
+    text-align: justify; /* optional: makes text neat */
+}
+
+.heading4 {
+    color:#1a5f35;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    top:230px;
+    left:250px;
+    font-size: 13px;
+    
+}
+
+.paragraph4 {
+    color:black;
+    font-family: serif;
+    font-style: bold;
+    font-size: 10px;
+    position: relative;
+    top:250px;
+    left:-7px;
+    font-size: 20px;
+    max-width: 1000px;  /* adjust width as you like */
+    margin: 0 auto;    /* centers the paragraph */
+    line-height: 1.6;  /* better readability */
+    text-align: justify; /* optional: makes text neat */
+}
+
+
+.heading5 {
+    color:#1a5f35;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    top:300px;
+    left:250px;
+    font-size: 13px;
+    
+}
+
+
+.paragraph5 {
+    color:black;
+    font-family: serif;
+    font-style: bold;
+    font-size: 10px;
+    position: relative;
+    top:320px;
+    left:-7px;
+    font-size: 20px;
+    max-width: 1000px;  /* adjust width as you like */
+    margin: 0 auto;    /* centers the paragraph */
+    line-height: 1.6;  /* better readability */
+    text-align: justify; /* optional: makes text neat */
+}
+
+
+.social-icons {
+  display: flex;
+  gap: 20px;                  /* Space between icons */
+  justify-content: center;     /* Center horizontally */
+  position: relative;
+  left: -30px;
+  bottom:-400px;
+}
+
+.social-icon {
+  width: 70px;
+  height: 70px;
+  background-color: rgb(218, 211, 211);    /* Black circle */
+  color: rgb(0, 0, 0);               /* Icon color */
+  border-radius: 90%;         /* Makes circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;      /* Remove underline */
+  transition: transform 0.3s, background-color 0.3s;
+
+  
+}
+
+.social-icon:hover {
+  transform: scale(1.1);       /* Slight zoom effect */
+  background-color: #333;      /* Slightly lighter black */
+}
+
+.social-icon i {
+  font-size: 24px;             /* Icon size */
+}
+
+.word {
+  display: flex;              /* Enable flexbox */
+  justify-content: center;    /* Center horizontally */
+  position: relative;         /* Allows small shift */
+  right: 30px;
+  left: -24px;                 /* Move slightly to the right */
+  font-family: initial;
+  bottom:-500px;
+}
+
+.word a {
+  color: #000000;       /* Dark blue */
+  text-decoration: underline;  /* Keep underline */
+  font-weight: bold;
+}
+
+.word a:visited {
+  color: #000000;       /* Keep dark blue after visited */
+}
+
+.word a:hover {
+  color: #000000;       /* Slightly darker on hover */
+  cursor: pointer;
+}
+
+.lasttext p {
+  font-size: 13px !important;   /* Force smaller size */
+  line-height: 1.3;
+  text-align: center;
+  color: #000000;
+  width: 50%;                   /* Restrict width */
+  margin: 0 auto;               /* Center paragraph */
+  position: relative;
+  right:100px;
+  left: -4px;
+  bottom:-600px;
+}
+
+
+.footer {
+  margin-top: 800px;
+  position: relative;
+  right: -50px ;
+  left: 600px;
+  color: #757474;
+  font-style: italic;
+}
+

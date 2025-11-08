@@ -1,0 +1,165 @@
+
+#quote-for-you {
+  background-color: #127227;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+#quote-for-you:hover {
+  background-color: #11631d;
+}
+
+/* Main heading */
+.heading1 h1 {
+  font-size: 42px;
+  font-weight: 400;
+  margin-top: 250px; /* controls how far from top */
+  margin-bottom: 0;
+  color: white;
+  margin-left: 390px;
+}
+
+.paragraph1 p {
+  margin-left: 595px; /* move right */
+  margin-top: 20px;   /* adjust vertical spacing */
+  color: white;
+  font-size: 20px;
+}
+
+.start-button {
+  text-align: center; /* centers the button */
+  margin-top: 10px;   /* space from content above */
+  
+}
+
+#start-therapy-btn {
+  display: inline-block;
+  padding: 20px 30px;     /* vertical | horizontal padding */
+  width: 200px;            /* adjust width */
+  height: 20px;            /* adjust height */
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;       /* bigger text */
+  border-radius: 10px;     /* slightly rounded corners */
+  background-color: #d7dbed;
+  color: #000000;
+  text-decoration: none;
+  line-height: 18px;       /* vertically center text inside button */
+  transition: 0.3s ease;
+}
+
+#start-therapy-btn:hover {
+  background-color: #b0b4c6; /* hover effect */
+  cursor: pointer;
+}
+
+ .white-block {
+    background-color:rgba(229, 235, 231) ;
+    min-height: 5vh;  /* ensures the block is at least one viewport height */
+    padding: 250px 0px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #ffffff;
+    position: relative;
+    margin-top:200px;
+    
+ }
+
+ .heading2 h1 {
+  position: relative;
+  top: -200px; /* moves text up visually */
+  font-size: 42px;
+  font-weight: 400;
+  text-align: center;
+  color: black;
+  margin: 0;
+}
+
+.paragraph2{
+  color:#000000;
+  position: relative;
+  left:560px;
+  top:-200px;
+  font-size: 20px;
+}
+.photo1 {
+  background: url('photo1 (2).jpg') center center/cover no-repeat;
+  width: 300px;          /* or whatever size you want */
+  aspect-ratio: 1 / 1;   /* keeps shape */
+  flex-shrink: 0;        /* stops resizing */
+  position: absolute;    /* takes out from white-block flow */
+  left: 60px;            /* adjust horizontal position */
+  top: 220px;            /* adjust vertical position */
+}
+
+.heading3 h1 {
+  font-size: 22px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  position: relative;
+  left: 400px;
+  top: -50px;
+  bottom: 500px;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 900;
+}
+
+.paragraph3 p {
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.3;
+  max-width: 950px;     /* keeps paragraph width readable */
+  margin: 0 auto;       /* centers paragraph horizontally */
+  text-align: left;     /* ensures all lines start from same left edge */
+  text-indent: 0;       /* makes first line align with the rest */
+  white-space: normal;  /* allows proper wrapping */
+  word-break: break-word; /* prevents overflow */
+  bottom: 600px;
+  position: relative;
+  top: -40px;
+  left: 115px;
+}
+
+ .footer { background-color: white; /* white footer background */
+    color: black; /* footer text color (you can change to gray or any color) */
+    text-align: center; /* center the text */
+    padding-top:150px; /* space above and below */
+    padding-bottom: 160px;
+    font-size: 16px; /* text size */
+    position: relative; /* keeps it inside normal flow */ 
+    width: 155%;
+    right:800px;
+    
+ }
+
+ .heading4 h1{
+  font-style:italic ;
+  color:#000000;
+  font-family:serif;
+  font-weight: 500;
+  font-size: 40px;
+  position: relative;
+  left:380px;
+  font-family: initial;
+  bottom:65px;
+ }
+
+ .paragraph4 p{
+  color:  #858585;
+  position: relative;
+  left:370px;
+  font-size: 28px;
+  font-family: 'Dancing Script', cursive;
+  bottom:80px;
+ }
+
+.text{
+  position: relative;
+  top:100px;
+  position: relative;
+  right: -50px ;
+  left: 380px;
+  color: #757474;
+  font-style: italic;
+}
