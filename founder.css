@@ -1,0 +1,54 @@
+
+#quote-for-you {
+  background-color: #127227;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+#quote-for-you:hover {
+  background-color: #11631d;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Georgia', serif;
+  background-image: url("lilac.png"); /* 👈 put your image name here */
+  background-size: cover;   /* makes it fill the screen */
+  background-position: center; /* centers it */
+  background-attachment: fixed; /* stays still when scrolling */
+  background-repeat: no-repeat;
+  
+  
+}
+.text h1{
+  font-style:italic ;
+  color:#000000;
+  font-family:serif;
+  font-weight: 500;
+  font-size: 50px;
+  position: relative;
+  left:210px;
+  font-family: initial;
+  bottom:65px;
+  top:80px;
+  white-space: nowrap;
+  
+ }
+
+/* ✅ Paragraph styling */
+.paragraph p {
+  color: #000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  line-height: 1.7;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8); /* semi-transparent bg for readability */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top:150px;
+}
