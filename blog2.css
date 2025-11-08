@@ -1,0 +1,72 @@
+#quote-for-you {
+  background-color: #127227;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+#quote-for-you:hover {
+  background-color: #11631d;
+}
+
+
+.windows {
+  width: 100%;               /* makes section full width */
+  display: flex;             /* centers content if needed */
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: pink;    /* pink background */
+}
+.windows img {
+  width: 100%;                /* control image size */
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+/* People image overlay */
+.picture {
+  position: absolute;  /* positions on top of background */
+  top: 1010px;
+  left:200px;
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture img {
+  width: 80%; /* adjust to control size */
+  height: auto;
+  display: block;
+}
+
+.heading1 h1 {
+  position: absolute;
+  top: -15px; /* adjust vertical position */
+  bottom:-700px;
+  white-space: nowrap;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+}
+
+.paragraph1 p {
+  position: absolute;
+  top: 75px; /* adjust vertical position */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: justify;
+  color: black;
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 1480px; /* controls paragraph width */
+  width: 800%;
+  font-family: 'Georgia', serif;
+  font-weight: 300;
+}

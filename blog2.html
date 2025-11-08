@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="blog2.css" />
+
+
+  <style>
+    body, h1, nav, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    }
+    
+    header {
+    background-color: rgba(229, 235, 231, 0.85); /* Slight transparency */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+     }
+     header h1 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #e9f6ee;
+    line-height: 1.3;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  nav a, nav button {
+    font-family: 'Arial', sans-serif;
+    color: #1a5f35;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  nav button {
+    background-color: #9cc2bd;
+    color: #155d29;
+    font-weight: 600;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+    font-size: 18px;      /* Increase text size */                           /* Increase clickable area */
+    min-width: 200px;     /* Minimum width for buttons */
+    height: 45px;         /* Fixed height for uniformity */
+    border-radius: 10px;
+  }
+
+  nav button:hover {
+    background-color: #7da297;
+  }
+
+  main {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 50px 50px;
+    position: relative;
+    z-index: 1;
+  }
+
+  main h2 {
+    font-weight: bold;
+    font-size: 2.8rem;
+    margin-bottom: 0.2rem;
+  }
+
+  main p {
+    font-size: 0.9rem;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+  }
+  main {
+  display: flex;
+  flex-direction: column;    /* Keep vertical stacking of content */
+  justify-content: center;   /* Center items vertically */
+  align-items: center;       /* Center items horizontally */
+  text-align: center;
+  height: auto;
+  }
+  
+    @media screen and (max-width: 600px) {
+    main h2 {
+      font-size: 2rem;
+    }
+
+    header {
+      padding: 15px 20px;
+    }
+
+    nav {
+      gap: 10px;
+    }
+
+    nav a, nav button {
+      font-size: 0.9rem;
+    }
+
+    main button#book-now-btn {
+      padding: 8px 18px;
+      font-size: 0.9rem;
+    }
+  }
+  
+</style>
+</head>
+<body>
+    <header>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <a href="#">
+    <img src="mylogo.png" alt="I Am Proud Of You Logo" style="height: 100px; object-fit: contain;" />
+  </a>
+
+  <nav>
+    <div id="top"></div>
+    <a href="file:///C:/Users/Ali/Desktop/IAmProudOfYou/templates/index.html">Home</a>
+    <a href="file:///C:/Users/Ali/Desktop/IAmProudOfYou/templates/about-us.html">About Us</a>
+    <a href="file:///C:/Users/Ali/Desktop/IAmProudOfYou/templates/services.html">Services</a>
+    <a href="file:///C:/Users/Ali/Desktop/IAmProudOfYou/templates/blog.html">Blog</a>
+    <a href="file:///C:/Users/Ali/Desktop/IAmProudOfYou/templates/founder.html">Founder</a>
+    <a href="file:///C:/Users/Ali/Desktop/IAmProudOfYou/templates/quote.html" id="quote-for-you">Quote for you</a>
+    
+  </nav>
+</header>
+<body>
+  <section class="windows">
+     <img src="windows.png" alt="AI Therapy" />
+  <div class="picture">
+    <img src="people.png"/>
+  <div class="heading1">
+      <h1>AI Therapy: A Comprehensive Guide</h1>
+    </div>
+  <div class="paragraph1">
+    <p>AI therapy is transforming the way people approach mental health care by combining the power of artificial intelligence with the compassion and understanding traditionally offered by therapists. In a world where stress, anxiety, and depression are increasingly common, access to mental health support has become more important than ever. Unfortunately, many people still struggle to find affordable and accessible therapy options. This is where AI therapy steps in — offering a new, innovative form of emotional support that is available anytime, anywhere, through digital platforms and chatbots designed to simulate human conversation.<br><br><br>
+    At its core, AI therapy uses advanced technologies such as natural language processing, machine learning, and data analysis to understand and respond to users’ emotions. When someone communicates with an AI therapy chatbot, the system interprets the text, identifies emotional patterns, and generates supportive responses. These chatbots can engage in meaningful conversations, offer coping strategies, and provide comfort to users experiencing stress, sadness, or anxiety. Many AI therapy platforms are also programmed with evidence-based psychological techniques such as cognitive behavioral therapy (CBT). This method focuses on identifying negative thought patterns and replacing them with healthier ones, helping users build emotional resilience over time.<br><br><br>
+    For instance, when a user says, “I feel like I’m not good enough,” an AI therapy bot may respond with an encouraging message, reminding the person of their strengths or suggesting a positive self-affirmation exercise. It can guide users through relaxation techniques, mindfulness exercises, or journaling prompts that help them express their feelings more clearly. By doing so, AI therapy provides a comforting, nonjudgmental space where users can freely share their emotions — something that is often difficult for people to do with others.<br><br><br>
+    One of the biggest advantages of AI therapy is accessibility. Unlike traditional therapy, which requires scheduling sessions and paying high fees, AI therapy is often free or very affordable. It operates 24 hours a day, allowing people to access mental health support whenever they need it, without waiting for appointments or dealing with long travel times. This is especially valuable for those living in remote areas, people with busy schedules, or individuals who may feel anxious about visiting a therapist in person. AI therapy can also offer a sense of privacy and comfort, as users can share their thoughts without fear of judgment or embarrassment. For many, opening up to an AI feels easier than speaking to another person, making it a helpful first step toward healing.<br><br><br>
+    Despite these challenges, the future of AI therapy looks promising. With rapid advancements in emotional recognition technology, AI systems are becoming more capable of understanding tone, facial expressions, and even speech patterns. Future AI therapists may be able to detect subtle emotional shifts, provide real-time feedback, and personalize advice based on a user’s mood or mental state. This could make AI therapy not just a conversational tool but a full mental wellness companion — one that continuously learns and grows with the user.<br><br><br>
+    AI therapy also holds the potential to reduce stigma around mental health. Many people hesitate to seek help because they fear being judged or misunderstood. By offering a safe, judgment-free environment, AI therapy encourages individuals to talk openly about their feelings, which can be the first step toward recovery. Over time, as more people use AI tools to manage their mental well-being, society’s view of therapy may become more positive and accepting.<br><br><br>
+    In many ways, AI therapy represents the future of accessible mental health care. It brings comfort, understanding, and guidance to people who might otherwise face their struggles alone. While it cannot replace the deep empathy and expertise of a human therapist, it fills an important gap in the mental health landscape — especially for those who need immediate support or are unable to access traditional therapy.<br><br><br>
+    In conclusion, AI therapy is more than just a technological innovation; it’s a step toward making emotional support universal. It combines science, technology, and compassion to create a space where people can express themselves freely and find comfort in moments of difficulty. As the world continues to evolve and the importance of mental health becomes clearer, AI therapy will play a key role in shaping a more understanding and connected future. It reminds us that even in a digital age, empathy can take many forms — and healing can begin with just a simple conversation.</p>
+  </p>
+  </div>
+  </div>
+  </section>
+</body>
+</html>
