@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="style.css" />
+   <script defer>
+    // ✅ Simple mobile menu toggle
+    function toggleMenu() {
+      const nav = document.querySelector("nav");
+      nav.classList.toggle("open");
+    }
+  </script>
 </head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -104,6 +111,10 @@
 </video>
 
 <header>
+  
+    <!-- ✅ Hamburger Button -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <a href="#">
@@ -162,6 +173,23 @@
   <p>© 2025 I Am Proud Of You. All rights reserved.</p>
 </div>
   </footer>
+  <script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('navbar');
+
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+
+  // Optional: close menu when clicking a link
+  const navLinks = nav.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+    });
+  });
+</script>
+
 </body>
 
 </html>
