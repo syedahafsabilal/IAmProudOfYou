@@ -1,4 +1,472 @@
 
+body {
+    background-color: white;
+  
+    
+}
+.social-icon.tw {
+  background-color: black !important;   /* black background */
+  color: white;              /* white X icon */
+}
+
+.social-icon.tw:hover {
+  background-color: #333;    /* slightly lighter on hover */
+}
+
+.background {
+   width: 100vw;
+   height: 200px;
+   background: url('psychology.jpg') center center/cover no-repeat; 
+   display: flex; flex-direction: column; 
+   justify-content: center; 
+   align-items: center; 
+   margin: 0; 
+   padding: 50px 100px; 
+   text-align: center; 
+   text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    position: relative; 
+    background-position: center 20px; 
+    padding-top: 150px;
+    top:-20px;
+   }
+
+.text{
+  font-size: 25px;
+  white-space: nowrap;
+  text-align: center; 
+  margin:  0px;
+  font-weight: 100px;
+  font-family:initial;
+  align-self: center;
+  display: flex;
+  width:10px ;
+  align-self: center;
+  justify-content: center;
+  height:5px ;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: aliceblue;
+  left: 10px;
+  margin-left: -190px;
+  font-weight: lighter;
+  position: relative;
+  bottom:70px;
+}
+
+
+.text-content {
+  right: 50px;
+  text-align: center; /* text aligned to right side */
+  align-self: center;
+  font-size: 200px;
+  border-radius: 500px;
+  animation-name: moveForward;
+  animation-fill-mode: forwards;
+  
+ 
+}
+
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-self: center; 
+  padding: 10px 50px;
+  size:-50px;
+  width: 200px;      /* sets the image width */
+  height: 400px;      /* keeps aspect ratio */
+
+  
+}
+.top-text {
+  color:black;
+  align-self: center;
+  padding: 90px 20px;
+  text-align: center;
+  font-size: 1rem;
+  margin:  0px;
+  font-weight: 10;
+  font-family:initial;
+  height: 100px;
+  
+}
+.top-textt {
+  position: relative; /* needed for right offset */
+  text-align: center; /* centers the text */
+  font-size: 20px;
+  border-radius: 1000px;
+  animation-name: moveForward;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  color: rgb(134, 126, 126);
+  font-style: italic;
+  height: 20px;
+
+}
+
+.heading h1 {
+  color: #000;
+  font-size: 1.4rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  align-self: center;
+  justify-self: center;
+  white-space: nowrap;     /* Prevent text wrapping */
+  text-overflow: ellipsis;
+  margin-left: -20px;
+  margin-right: 100px;
+  font-style: normal;
+  padding: 200px 50px;
+  padding-bottom: 10px;
+  padding-top: 150px;
+  left: -200px;
+  size:30px;
+}
+.heading3 h1 {
+  color: #000;
+  font-size: 1.4rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  align-self: center;
+  justify-self: center;
+  white-space: nowrap;     /* Prevent text wrapping */
+  text-overflow: ellipsis;
+  margin-left: -20px;
+  margin-right: 60px;
+  font-style: normal;
+  padding: 200px 50px;
+  padding-bottom: 10px;
+  padding-top: 150px;
+  size:30px;
+}
+
+.heading4 h1 {
+  color: #000;
+  font-size: 1.4rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  align-self: center;
+  justify-self: center;
+  white-space: nowrap;     /* Prevent text wrapping */
+  text-overflow: ellipsis;
+  margin-left: -280px;
+  margin-right: 60px;
+  font-style: normal;
+  padding: 200px 50px;
+  padding-bottom: 10px;
+  padding-top: 150px;
+  size:30px;
+}
+.paragraph1 p {
+  color: rgb(70, 70, 70);
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  font-style: normal;
+  align-self: center;
+  justify-self: center;
+  text-align: left;
+  padding: 20px 30px;
+  padding-bottom:1px ;
+  padding-top: 0px;
+  left:50px;
+  right:-50px;
+  width: 150%;      /* Take full width */
+  max-width: 1200px; /* Optional max width for readability */
+  margin: 0 auto;   /* Center horizontally if width is less than parent */
+  white-space: normal; /* Allow text wrapping */
+  font-size: 20px;
+  line-height: 1.4;
+}
+.paragraph2 p {
+  color: rgb(70, 70, 70);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  font-style: normal;
+  align-self: center;
+  justify-self: center;
+  text-align: left;
+  padding: 20px 30px;
+  padding-bottom:1px ;
+  padding-top: 0px;
+  width: 500%;      /* Take full width */
+  max-width: 1000px; /* Optional max width for readability */
+  margin: 0 auto;   /* Center horizontally if width is less than parent */
+  white-space: normal; /* Allow text wrapping */
+  font-size: 20px;
+  line-height: 1.4;
+  
+}
+.paragraph p {
+  color: rgb(70, 70, 70);
+  font-size: 1rem;
+  font-style: normal;
+  align-self: center;
+  justify-self: center;
+  text-align: left;
+  padding: 20px 30px;
+  padding-bottom:1px ;
+  padding-top: 0px;
+   width: 700%;      /* Take full width */
+  max-width: 1000px; /* Optional max width for readability */
+  margin: 0 auto;   /* Center horizontally if width is less than parent */
+  white-space: normal; /* Allow text wrapping */
+  font-size: 20px;
+  line-height: 1.4;
+}
+.image-contentt {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  align-self: left; 
+  padding: 250px 250px;
+  size:-50px;
+  width: 200px;      /* sets the image width */
+  height: 400px;      /* keeps aspect ratio */
+  margin-left: -620px;
+  
+
+}
+.image-contenttt {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  align-self: left; 
+  padding: 250px 250px;
+  size: 10px;
+  width: 200px;      /* sets the image width */
+  height: 400px;      /* keeps aspect ratio */
+  margin-left: -620px;
+  
+
+}
+.secondheading h1{
+  color:black;
+  align-self: center;
+  padding: 200px 20px;
+  text-align: center;
+  margin:  0px;
+  font-weight: 100px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right:200px;
+  
+}
+.secondparagraph p{
+  position: relative; /* needed for right offset */
+  text-align: center; /* centers the text */
+  font-size: 20px;
+  border-radius: 1000px;
+  color: rgb(134, 126, 126);
+  font-style: italic;
+  height: 900px;
+  top:-200px;
+  white-space: nowrap;   
+  margin-left:-220px;  
+  margin-right: -0.5px;
+
+}
+.Q1 h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #000;
+  text-align: left;        /* use text-align, not align-items */
+  font-size: 30px;
+  position: relative;      /* enable movement */
+  bottom: 1200px;             /* moves it upward */
+  margin-right: -350px;
+  margin-left: -1000px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  
+}
+
+.paragraph22 p {
+  color: rgb(110, 108, 108);
+  font-size: 20px;
+  font-style: normal;
+  align-self: center;
+  justify-self: center;
+  padding: 100px 30px;
+  position: relative;
+  padding-top: 220px;
+  top: -1390px;
+  left:-370px;
+  right:100px;
+  width: 10000%;      /* Take full width */
+  max-width: 1400px; /* Optional max width for readability */
+  margin: 0 auto;   /* Center horizontally if width is less than parent */
+  white-space: normal; /* Allow text wrapping */
+  font-size: 18px;
+  line-height: 1.6;
+  
+}
+.black-line  {
+  border: none;             /* Remove default border */
+  height: 1px;              /* Thickness of the line */
+  background-color: black;  /* Color of the line */
+  width: 190%;              /* Full width */
+  margin-top: -1450px; /* keep your upward shift */
+  margin-right: 220px;
+  margin-left: -340px; /* move it left by removing left margin */
+}
+
+.Q2 h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #000;
+  text-align: left;        /* use text-align, not align-items */
+  font-size: 30px;
+  position: relative;      /* enable movement */
+  bottom: 1200px;             /* moves it upward */
+  margin-right: -290px;
+  margin-left: -1000px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  
+}
+
+
+.paragraph33 p {
+  color: rgb(110, 108, 108);
+  font-size: 20px;
+  font-style: normal;
+  align-self: center;
+  justify-self: center;
+  padding: 100px 30px;
+  position: relative;
+  padding-top: 220px;
+  top: -1390px;
+  left:-370px;
+  right:100px;
+  width: 10000%;      /* Take full width */
+  max-width: 1400px; /* Optional max width for readability */
+  margin: 0 auto;   /* Center horizontally if width is less than parent */
+  white-space: normal; /* Allow text wrapping */
+  font-size: 18px;
+  line-height: 1.6;
+  
+}
+
+.Q3 h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #000;
+  text-align: left;        /* use text-align, not align-items */
+  font-size: 30px;
+  position: relative;      /* enable movement */
+  bottom: 1200px;             /* moves it upward */
+  margin-right: -560px;
+  margin-left: -1000px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  
+}
+
+.paragraph44 p {
+  color: rgb(110, 108, 108);
+  font-size: 20px;
+  font-style: normal;
+  align-self: center;
+  justify-self: center;
+  padding: 100px 30px;
+  position: relative;
+  padding-top: 220px;
+  top: -1390px;
+  left:-370px;
+  right:100px;
+  width: 10000%;      /* Take full width */
+  max-width: 1400px; /* Optional max width for readability */
+  margin: 0 auto;   /* Center horizontally if width is less than parent */
+  white-space: normal; /* Allow text wrapping */
+  font-size: 18px;
+  line-height: 1.6;
+  
+}
+
+.Q4 h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #000;
+  text-align: left;        /* use text-align, not align-items */
+  font-size: 30px;
+  position: relative;      /* enable movement */
+  bottom: 1150px;             /* moves it upward */
+  margin-right: -550px;
+  margin-left: -1000px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  
+}
+
+
+.paragraph55 p {
+  color: rgb(110, 108, 108);
+  font-size: 20px;
+  font-style: normal;
+  align-self: center;
+  justify-self: center;
+  padding: 100px 30px;
+  position: relative;
+  padding-top: 270px;
+  top: -1390px;
+  left:-370px;
+  right:100px;
+  width: 10000%;      /* Take full width */
+  max-width: 1400px; /* Optional max width for readability */
+  margin: 0 auto;   /* Center horizontally if width is less than parent */
+  white-space: normal; /* Allow text wrapping */
+  font-size: 18px;
+  line-height: 1.6;
+  
+}
+
+
+.Q5 h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #000;
+  text-align: left;        /* use text-align, not align-items */
+  font-size: 30px;
+  position: relative;      /* enable movement */
+  bottom: 1125px;             /* moves it upward */
+  margin-right: -550px;
+  margin-left: -1000px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  
+}
+
+
+.paragraph66 p {
+  color: rgb(110, 108, 108);
+  font-size: 20px;
+  font-style: normal;
+  align-self: center;
+  justify-self: center;
+  padding: 100px 30px;
+  position: relative;
+  padding-top: 270px;
+  top: -1370px;
+  left:-370px;
+  right:100px;
+  width: 1000%;      /* Take full width */
+  max-width: 1400px; /* Optional max width for readability */
+  margin: 0 auto;   /* Center horizontally if width is less than parent */
+  white-space: normal; /* Allow text wrapping */
+  font-size: 18px;
+  line-height: 1.6;
+  
+}
+
 #quote-for-you {
   background-color: #127227;
   color: white;
@@ -9,157 +477,143 @@
 #quote-for-you:hover {
   background-color: #11631d;
 }
-
-/* Main heading */
-.heading1 h1 {
-  font-size: 42px;
-  font-weight: 400;
-  margin-top: 250px; /* controls how far from top */
-  margin-bottom: 0;
-  color: white;
-  margin-left: 390px;
+.black-linelast  {
+  border: none;             /* Remove default border */
+  height: 1px;              /* Thickness of the line */
+  background-color: black;  /* Color of the line */
+  width: 190%;              /* Full width */
+  margin-top: -1420px; /* keep your upward shift */
+  margin-right: 220px;
+  margin-left: -340px; /* move it left by removing left margin */
 }
 
-.paragraph1 p {
-  margin-left: 595px; /* move right */
-  margin-top: 20px;   /* adjust vertical spacing */
-  color: white;
-  font-size: 20px;
-}
-
-.start-button {
-  text-align: center; /* centers the button */
-  margin-top: 10px;   /* space from content above */
+.Q6 h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #000;
+  text-align: left;        /* use text-align, not align-items */
+  font-size: 30px;
+  position: relative;      /* enable movement */
+  bottom: 1100px;             /* moves it upward */
+  margin-right: -580px;
+  margin-left: -1000px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
   
 }
 
-#start-therapy-btn {
-  display: inline-block;
-  padding: 20px 30px;     /* vertical | horizontal padding */
-  width: 200px;            /* adjust width */
-  height: 20px;            /* adjust height */
-  font-family: 'Arial', sans-serif;
-  font-weight: 600;
-  font-size: 1.2rem;       /* bigger text */
-  border-radius: 10px;     /* slightly rounded corners */
-  background-color: #d7dbed;
-  color: #000000;
-  text-decoration: none;
-  line-height: 18px;       /* vertically center text inside button */
-  transition: 0.3s ease;
+.paragraph77 p {
+  color: rgb(110, 108, 108);
+  font-size: 20px;
+  font-style: normal;
+  align-self: center;
+  justify-self: center;
+  padding: 100px 30px;
+  position: relative;
+  padding-top: 270px;
+  top: -1370px;
+  left:-370px;
+  right:100px;
+  width: 1000%;      /* Take full width */
+  max-width: 1400px; /* Optional max width for readability */
+  margin: 0 auto;   /* Center horizontally if width is less than parent */
+  white-space: normal; /* Allow text wrapping */
+  font-size: 18px;
+  line-height: 1.6;
+  
 }
 
-#start-therapy-btn:hover {
-  background-color: #b0b4c6; /* hover effect */
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+  left: -45px;
+}
+
+.social-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  margin-top: -700px;
+}
+
+/* ✅ Real brand colors */
+.social-icon.insta {
+  background: radial-gradient(circle at 30% 107%, 
+    #fdf497 0%, 
+    #fdf497 5%, 
+    #fd5949 45%, 
+    #d6249f 60%, 
+    #285AEB 90%);
+}   /* Instagram gradient */
+
+.social-icon.fb { background-color: #1877F2; }      /* Facebook */
+.social-icon.yt { background-color: #FF0000; }      /* YouTube */
+.social-icon.tw { background-color: #1DA1F2; }      /* Twitter */
+.social-icon.li { background-color: #0077B5; }      /* LinkedIn */
+
+/* Hover effect */
+.social-icon:hover {
+  transform: scale(1.15);
+  opacity: 0.85;
+}
+
+.word {
+  display: flex;              /* Enable flexbox */
+  justify-content: center;    /* Center horizontally */
+  position: relative;         /* Allows small shift */
+  left: 200px;                 /* Move slightly to the right */
+  margin-top: -550px;           /* Adjust vertical spacing */
+  font-family: initial;
+
+}
+
+.word a {
+  color: #000000;       /* Dark blue */
+  text-decoration: underline;  /* Keep underline */
+  font-weight: bold;
+  font-size: 22px;
+  position: relative;
+  right:10px;
+}
+
+.word a:visited {
+  color: #000000;       /* Keep dark blue after visited */
+}
+
+.word a:hover {
+  color: #000000;       /* Slightly darker on hover */
   cursor: pointer;
 }
 
- .white-block {
-    background-color:rgba(229, 235, 231) ;
-    min-height: 5vh;  /* ensures the block is at least one viewport height */
-    padding: 250px 0px;
-    width: 100%;
-    box-sizing: border-box;
-    color: #ffffff;
-    position: relative;
-    margin-top:200px;
-    
- }
-
- .heading2 h1 {
-  position: relative;
-  top: -200px; /* moves text up visually */
-  font-size: 42px;
-  font-weight: 400;
-  text-align: center;
-  color: black;
-  margin: 0;
-}
-
-.paragraph2{
-  color:#000000;
-  position: relative;
-  left:560px;
-  top:-200px;
-  font-size: 20px;
-}
-.photo1 {
-  background: url('photo1 (2).jpg') center center/cover no-repeat;
-  width: 300px;          /* or whatever size you want */
-  aspect-ratio: 1 / 1;   /* keeps shape */
-  flex-shrink: 0;        /* stops resizing */
-  position: absolute;    /* takes out from white-block flow */
-  left: 60px;            /* adjust horizontal position */
-  top: 220px;            /* adjust vertical position */
-}
-
-.heading3 h1 {
-  font-size: 22px;
-  font-weight: 400;
-  color: rgb(0, 0, 0);
-  position: relative;
-  left: 400px;
-  top: -50px;
-  bottom: 500px;
-  font-family:'Times New Roman', Times, serif;
-  font-weight: 900;
-}
-
-.paragraph3 p {
-  color: #000000;
-  font-size: 18px;
+.lasttext p {
+  font-size: 13px !important;   /* Force smaller size */
   line-height: 1.3;
-  max-width: 950px;     /* keeps paragraph width readable */
-  margin: 0 auto;       /* centers paragraph horizontally */
-  text-align: left;     /* ensures all lines start from same left edge */
-  text-indent: 0;       /* makes first line align with the rest */
-  white-space: normal;  /* allows proper wrapping */
-  word-break: break-word; /* prevents overflow */
-  bottom: 600px;
+  text-align: center;
+  color: #000000;
+  width: 100%;                   /* Restrict width */
+  margin: 0 auto;               /* Center paragraph */
+  margin-top: 50px;
   position: relative;
-  top: -40px;
-  left: 115px;
+  right:100px;
+  left: -70px;
+  top:100px;
 }
 
- .footer { background-color: white; /* white footer background */
-    color: black; /* footer text color (you can change to gray or any color) */
-    text-align: center; /* center the text */
-    padding-top:150px; /* space above and below */
-    padding-bottom: 160px;
-    font-size: 16px; /* text size */
-    position: relative; /* keeps it inside normal flow */ 
-    width: 155%;
-    right:800px;
-    
- }
-
- .heading4 h1{
-  font-style:italic ;
-  color:#000000;
-  font-family:serif;
-  font-weight: 500;
-  font-size: 40px;
-  position: relative;
-  left:380px;
-  font-family: initial;
-  bottom:65px;
- }
-
- .paragraph4 p{
-  color:  #858585;
-  position: relative;
-  left:370px;
-  font-size: 28px;
-  font-family: 'Dancing Script', cursive;
-  bottom:80px;
- }
-
-.text{
-  position: relative;
-  top:100px;
+.footer {
+  margin-top: 300px;
   position: relative;
   right: -50px ;
-  left: 380px;
-  color: #757474;
-  font-style: italic;
+  left: -50px;
 }
