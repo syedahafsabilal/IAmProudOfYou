@@ -541,7 +541,7 @@ nav {
     margin-bottom: 10px !important;
     padding: 10px 0 !important;
     position: relative;
-    left:-120px !important;
+    left:-200px !important;
     margin-right: 10px !important;
     
     bottom: 10px !important;
@@ -589,3 +589,4 @@ nav {
   }
 
 }
+
