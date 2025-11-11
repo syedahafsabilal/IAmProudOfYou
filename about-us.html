@@ -15,7 +15,8 @@
     <img src="mylogo.png" alt="I Am Proud Of You Logo" style="height: 120px; object-fit: contain;" />
   </a>
  
-  <nav>
+  <button class="menu-toggle" id="menu-toggle">☰</button>
+  <nav id="navbar">
     <div id="top"></div>
     <a href="index.html">Home</a>
     <a href="about-us.html">About Us</a>
@@ -210,9 +211,29 @@
 <footer class="footer">
   &copy; 2025 I Am Proud Of You. All rights reserved.
 </footer>
-</body>
-</html>
+<script>
+const menuToggle = document.getElementById('menu-toggle');
+const nav = document.getElementById('navbar');
+
+menuToggle.addEventListener('click', () => {
+  if (nav.style.display === "flex") {
+    nav.style.display = "none";  // close menu
+  } else {
+    nav.style.display = "flex";  // open menu
+  }
+});
+
+// Close menu when a link is clicked (mobile)
+nav.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    nav.style.display = "none";
+  });
+});
+
+</script>
+
  </body>
 
 </html>
+
 
