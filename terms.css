@@ -159,39 +159,6 @@
 }
 
 
-.social-icons {
-  display: flex;
-  gap: 20px;                  /* Space between icons */
-  justify-content: center;     /* Center horizontally */
-  position: relative;
-  left: -30px;
-  bottom:-400px;
-}
-
-.social-icon {
-  width: 70px;
-  height: 70px;
-  background-color: rgb(218, 211, 211);    /* Black circle */
-  color: rgb(0, 0, 0);               /* Icon color */
-  border-radius: 90%;         /* Makes circle */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;      /* Remove underline */
-  transition: transform 0.3s, background-color 0.3s;
-
-  
-}
-
-.social-icon:hover {
-  transform: scale(1.1);       /* Slight zoom effect */
-  background-color: #333;      /* Slightly lighter black */
-}
-
-.social-icon i {
-  font-size: 24px;             /* Icon size */
-}
-
 .word {
   display: flex;              /* Enable flexbox */
   justify-content: center;    /* Center horizontally */
@@ -239,4 +206,5 @@
   color: #757474;
   font-style: italic;
 }
+
 
