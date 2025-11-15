@@ -355,6 +355,10 @@
   font-style: Italic;
 }
 
+
+/* -------------------
+📱 Mobile Navbar Menu
+------------------- */
 .menu-toggle {
   display: none;
   background: none;
@@ -364,41 +368,28 @@
   cursor: pointer;
 }
 
-/* Mobile Styles */
+/* Show hamburger icon only on phones */
 @media (max-width: 768px) {
-  /* Fix navbar gap on mobile */
-header {
-  padding: 10px 0 !important; /* remove horizontal padding */
-  position: relative;
-  right:2px;
-  width: 100%;
-}
-
-nav {
-  width: 100% !important;     /* full width */
-  left: 0 !important;         /* align left edge */
-  padding: 10px 0 !important; /* no extra padding on sides */
-  box-sizing: border-box;     /* include padding in width */
-}
-
   .menu-toggle {
     display: block;
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 30px;
+    z-index: 1000;
   }
 
   nav {
     display: none;
     flex-direction: column;
+    background-color: rgba(229, 235, 231, 0.95);
     position: absolute;
-    top: 100%;
+    top: 100px;
     left: 0;
     width: 100%;
-    background-color: rgba(229, 235, 231, 0.95);
-    gap: 15px;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 0;
+    gap: 15px;
+    transition: all 0.3s ease;
   }
 
   nav.open {
@@ -407,11 +398,24 @@ nav {
 
   nav a {
     font-size: 1.2rem;
-    padding: 10px 0;
+    color: #1a5f35;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
   }
 }
-nav {
-  display: flex; /* desktop default */
+@media (max-width: 768px) {
+  nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  nav.open {
+    display: flex;
+    max-height: 500px; /* enough to show links */
+  }
 }
 @media (max-width: 768px) {
   nav {
@@ -427,7 +431,6 @@ nav {
     z-index: 1000;  /* important so it overlays content */
   }
 }
-
 /* -------------------------- */
 /* Mobile adjustments < 768px */
 /* -------------------------- */
@@ -589,4 +592,5 @@ nav {
   }
 
 }
+
 
