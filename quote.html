@@ -1,197 +1,681 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="quote.css" />
-<header>
-  <a href="#">
-    <img src="mylogo.png" alt="I Am Proud Of You Logo" style="height: 120px; object-fit: contain;" />
-  </a>
-
-  <button class="menu-toggle" id="menu-toggle">☰</button>
-  <nav id="navbar">
-    <div id="top"></div>
-    <a href="index.html">Home</a>
-    <a href="about-us.html">About Us</a>
-    <a href="services.html">Services</a>
-    <a href="blog.html">Blog</a>
-    <a href="founder.html">Founder</a>
-    <a href="quote.html" id="quote-for-you">Quote for you</a>
-    
-  </nav>
-</header>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="services.css" />
+  <title>Services - I Am Proud Of You</title>
   <style>
-   
-    body, h1, nav, button {
-    margin: 0;
-    padding: 0;
-    font-family: 'Georgia', serif;
+  header {
+  background-color: rgba(229, 235, 231, 0.85);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.top-textt {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  bottom:25px;
+  right:100px;
+  
+}
+header h1 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #e9f6ee;
+}
+
+nav a, nav button {
+  font-family: 'Arial', sans-serif;
+  color: #1a5f35;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+}
+
+nav button {
+  background-color: #9cc2bd;
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+
+    /* Reset and Base Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
     
-    header {
-    background-color: rgba(229, 235, 231, 0.85); /* Slight transparency */
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
-    position: relative;
-     }
-     header h1 {
-    font-weight: bold;
-    font-size: 1.3rem;
-    color: #e9f6ee;
-    line-height: 1.3;
-  }
+    body {
+      font-family: sans-serif ;
+      line-height: 1.6;
+      color: #333;
+      overflow-x: hidden;
+      background-color: white;
+    }
 
-  nav {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
+   
+    /* Hero Section */
+    .background {
+      width: 100%;
+      min-height: 350px !important;
+      background: url('psychology.jpg') center center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 3rem 1rem;
+      color: white;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    }
+  
 
-  nav a, nav button {
-    font-family: 'Arial', sans-serif;
-    color: #1a5f35;
-    text-decoration: none;
-    font-size: 1.5rem;
+    .text {
+      left:210px;
+      bottom:50px;
+    }
+
+    /* Intro Section */
+    .intro-section {
+      text-align: center;
+      padding: 3rem 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .top-text h1 {
+      font-size: clamp(1.8rem, 3vw, 2.2rem);
+      margin-bottom: 1rem;
+      color: #000;
+    }
+  .top-textt {
+  display: flex;
+  justify-content: flex-end; /* moves content to the right */
+  margin-top: 10px;           /* spacing from the heading */
+}
+
+.top-textt p {
+  font-size: 1.1rem;
+  color: #666;
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0; /* remove default margin */
+}
+
+   
+
+    /* Services Sections */
+    .service-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 2rem;
+    }
+
+    .service-image {
+      flex: 1 1 300px;
+      max-width: 400px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .service-image img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .service-content {
+      flex: 1 1 300px;
+      padding: 0 1rem;
+    }
+
+    .service-content h1 {
+      color: #000;
+      font-size: clamp(1.5rem, 2.5vw, 1.8rem);
+      font-weight: 500;
+      font-family:sans-serif ;
+      margin-bottom: 1rem;
+    }
+
+    .service-content p {
+      color: #333;
+      font-family:sans-serif ;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .faq-intro {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .faq-intro h1{
+      color:black;
+  align-self: center;
+  padding: 200px 20px;
+  text-align: center;
+  margin:  0px;
+  font-weight: 100px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  justify-content: center;
+  left: 50px;
+  margin-right:100px;
+  white-space: nowrap;
+  position: relative;
+  bottom:200px;
+    }
+ 
+
+    .faq-intro p {
+      font-size: 1.1rem;
+      color: #666;
+      font-style: italic;
+      position: relative;
+      bottom:380px !important;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-weight: 500;
+    }
+
+    
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+ .faq-item {
+  margin-bottom: 30px; /* spacing between FAQs */
+}
+.faq-question,
+.faq-answer,
+.blackline {
+  position: relative; /* keep it relative */
+  bottom: 300px !important;          /* reset bottom spacing */
+  margin-top: 0;      /* optional: remove extra spacing if needed */
+  margin-bottom: 30px; /* spacing between Q, A, and line */
+}
+.faq-question {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #000;
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  cursor: pointer;
+  bottom: 100px; /* space below question */
+}
+
+.faq-answer {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  bottom: 100px; /* space below answer */
+}
+/* FAQ Black line separator - consistent thickness */
+.blackline {
+  width: 100%;
+  border-top: 2px solid black; /* consistent 2px thickness */
+  margin: 20px 0 0 0;          /* spacing above the line */
+  display: block;
+  box-sizing: border-box;
+  bottom: 100px;
+}
+
+
+
+    /* Social Icons */
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: -200px !important;
+      padding: 0 1rem;
+      
+    }
+
+    .social-icon {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      position:relative;
+      margin-bottom:60px;
+    }
+
+    .social-icon:hover {
+      transform: scale(1.15);
+      opacity: 0.85;
+    }
+
+    .social-icon.insta {
+      background: radial-gradient(circle at 30% 107%, 
+        #fdf497 0%, 
+        #fdf497 5%, 
+        #fd5949 45%, 
+        #d6249f 60%, 
+        #285AEB 90%);
+    }
+
+    .social-icon.fb { 
+      background-color: #1877F2; 
+    }
+
+    .social-icon.yt { 
+      background-color: #FF0000; 
+    }
+
+    .social-icon.tw { 
+      background-color: #000000; 
+    }
+
+    .social-icon.li { 
+      background-color: #0077B5; 
+    }
+  
+    /* Footer Content */
+    .word {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .word a {
+      color: #000000;
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    
+    .word a:hover {
+      color: #333;
+    }
+
+    .lasttext {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .lasttext p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      text-align: center;
+      color: #555;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #757474;
+      font-style: italic;
+      margin-top: 2rem;
+    }
+    
+/* -------------------
+📱 Mobile Navbar Menu
+------------------- */
+  .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #1a5f35;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Show hamburger icon only on phones */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    font-size: 2rem;
+    z-index: 1001; /* above everything */
     background: none;
     border: none;
     cursor: pointer;
+  }
+  
+ 
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 120px; /* below header */
+    left: 0;
+    width: 100%;
+    background-color: rgba(229, 235, 231, 0.95);
+    text-align: center;
+    padding: 15px 0;
+    gap: 10px;
+    z-index: 1000;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+    color: #1a5f35;
+    padding: 10px 0;
   }
 
   nav a:hover {
     text-decoration: underline;
   }
 
-  nav button {
-    background-color: #9cc2bd;
-    color: #155d29;
-    font-weight: 600;
-    padding: 8px 15px;
-    transition: background-color 0.3s ease;
-    font-size: 18px;      /* Increase text size */                           /* Increase clickable area */
-    min-width: 200px;     /* Minimum width for buttons */
-    height: 45px;         /* Fixed height for uniformity */
-    border-radius: 10px;
-  }
-
-  nav button:hover {
-    background-color: #7da297;
-  }
-
-  main {
-    flex-grow: 1;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.7);
-    padding: 50px 50px;
+  header {
     position: relative;
-    z-index: 1;
+    flex-direction: row; /* logo left, menu right */
+    justify-content: space-between;
+    align-items: center;
   }
 
-  main h2 {
-    font-weight: bold;
-    font-size: 2.8rem;
-    margin-bottom: 0.2rem;
-  }
-
-  main p {
-    font-size: 0.9rem;
-    font-family: 'Arial', sans-serif;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
-  }
-  main {
-  display: flex;
-  flex-direction: column;    /* Keep vertical stacking of content */
-  justify-content: center;   /* Center items vertically */
-  align-items: center;       /* Center items horizontally */
-  text-align: center;
-  height: auto;
-  }
-  
-    @media screen and (max-width: 600px) {
-    main h2 {
-      font-size: 2rem;
+      .background {
+        min-height: 400px;
+        padding: 4rem 2rem;
+      }
+      
+      .service-section {
+        padding: 4rem 2rem;
+      }
+      .top-textt {
+        right:10px;
+      }
+      .faq-section {
+        padding: 4rem 2rem;
+      }
+      .faq-intro h1{
+        position: relative;
+        left:10px;
+      }
+      .social-icon {
+        width: 70px !important;
+        height: 70px !important;
+        font-size: 1.4rem;
+        bottom:35px;
+      }
+      
     }
 
-    header {
-      padding: 15px 20px;
+    @media (min-width: 1024px) {
+      header {
+        padding: 1rem 3rem;
+      }
+      
+      .background {
+        min-height: 500px;
+        padding: 5rem 3rem;
+      }
+      
+      .service-section {
+        padding: 5rem 2rem;
+        flex-wrap: nowrap;
+      }
+      
+      .service-section:nth-child(even) {
+        flex-direction: row-reverse;
+      }
     }
 
-    nav {
-      gap: 10px;
+    @media (max-width: 767px) {
+      header {
+        flex-direction: row;       /* keep logo and menu on the same row */
+        justify-content: space-between; /* logo left, menu right */
+        align-items: center;
+        text-align: left;
+        padding: 10px 20px;
+       
+      }
+      
+      nav {
+        justify-content: center;
+      }
+      
+      .service-section {
+        flex-direction: column;
+      }
+      
+      .service-content {
+        text-align: center;
+      }
+      
+      .social-icons {
+        gap: 0.8rem;
+      }
+      
+      .social-icon {
+        width: 60px;
+        height: 65px;
+        font-size: 1.1rem;
+        margin-bottom:80px;
+      }
     }
+ 
+    @media (max-width: 480px) {
+      nav a {
+        font-size: 0.9rem;
+        padding: 0.2rem 0.4rem;
+      }
+      
+      #quote-for-you {
+        padding: 0.4rem 0.8rem;
+      }
+      
+      .background {
+        padding: 2rem 1rem;
+        min-height: 250px;
+      }
+      
+      .service-section {
+        padding: 2rem 1rem;
+      }
+      
+      .faq-section {
+        padding: 2rem 1rem;
+      }
+    }
+    /* Navbar link spacing */
+nav a {
+  margin: 0 5px;   /* adds gap between links */
+}
 
-    nav a, nav button {
-      font-size: 0.9rem;
-    }
+/* Quote for you button */
+#quote-for-you {
+  background-color: #127227;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+}
 
-    main button#book-now-btn {
-      padding: 8px 18px;
-      font-size: 0.9rem;
-    }
-  }
-  
-  </style> 
+#quote-for-you:hover {
+  background-color: #11631d;
+}
+
+</style>
 </head>
 <body>
+  <header>
+  <a href="#">
+    <img src="mylogo.png" alt="I Am Proud Of You Logo" style="height: 120px; object-fit: contain;" />
+  </a>
+   
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+    <nav id="navbar">
+      <a href="index.html">Home</a>
+      <a href="about-us.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="founder.html">Founder</a>
+      <a href="quote.html" id="quote-for-you">Quote for you</a>
+    </nav>
+  </header>
 
-  <div id="quoteBox"></div>
+  <section class="background">
+    <div class="text">
+      <h1>Our Therapy Services</h1>
+    </div>
+  </section>
 
+  <section class="intro-section">
+    <div class="top-text">
+      <h1>Therapeutic Approaches</h1>
+    </div>
+    <div class="top-textt">
+      <p>Explore our diverse AI-driven therapy options tailored to your needs.</p>
+    </div>
+  </section>
+
+  <!-- Service 1: CBT -->
+  <section class="service-section">
+    <div class="service-image">
+      <img src="photo1.jpg" alt="Cognitive Behavioral Therapy" />
+    </div>
+    <div class="service-content">
+      <h1>Cognitive Behavioral Therapy (CBT)</h1>
+      <p>Our AI offers a structured approach to cognitive behavioral therapy, helping you identify and challenge negative thought patterns. Experience personalized sessions designed to fit your unique challenges and goals, allowing you to develop healthier thinking habits and coping strategies.</p>
+    </div>
+  </section>
+
+  <!-- Service 2: Mindfulness -->
+  <section class="service-section">
+    <div class="service-image">
+      <img src="calmphoto.jpg" alt="Mindfulness and Meditation" />
+    </div>
+    <div class="service-content">
+      <h1>Mindfulness and Meditation</h1>
+      <p>Engage in AI-guided mindfulness and meditation sessions that promote relaxation and self-awareness. These sessions are designed to help you manage stress and anxiety while fostering a sense of inner peace. Our AI adapts to your progress, ensuring a tailored experience that evolves with your needs.</p>
+    </div>
+  </section>
+
+  <!-- Service 3: Emotion Regulation -->
+  <section class="service-section">
+    <div class="service-image">
+      <img src="blackandwhite.jpg" alt="Emotion Regulation Therapy" />
+    </div>
+    <div class="service-content">
+      <h1>Emotion Regulation Therapy</h1>
+      <p>Our emotion regulation therapy leverages AI to assist you in understanding and managing your emotions effectively. Through interactive sessions, you'll learn techniques to enhance emotional intelligence and resilience. This therapy aims to empower you to navigate life's challenges with greater ease and confidence.</p>
+    </div>
+  </section>
+
+  <!-- Service 4: 24/7 Support -->
+  <section class="service-section">
+    <div class="service-image">
+      <img src="WhatsApp Image 2025-10-27 at 21.33.26_5f5fe8f9.jpg" alt="24/7 Emotional Support" />
+    </div>
+    <div class="service-content">
+      <h1>24/7 Emotional Support Chat</h1>
+      <p>Whenever you're feeling stressed, anxious, or overwhelmed, our AI therapy chat is here to listen and support you — anytime, day or night. It provides a safe, judgment-free space where you can express your thoughts and emotions freely. The AI therapist responds with empathy, understanding, and helpful guidance, offering comforting words, emotional validation, and gentle coping suggestions. Whether you need to calm your mind, process your feelings, or simply have someone to "talk" to, this always-available AI companion is designed to help you feel heard, supported, and cared for.</p>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="faq-intro">
+      <h1>Common Queries</h1>
+      <p>Find answers to frequently asked questions about our AI therapy services.</p>
+    </div>
+    <div class="faq-item">
+  <div class="faq-question">
+    What is AI Therapy and how does it work?
+  </div>
+  <div class="faq-answer">
+    <p>AI Therapy uses advanced artificial intelligence to provide emotional support, guidance, and coping tools through chat-based conversations. It helps you reflect on your feelings, learn self-care habits, and manage stress or anxiety in a safe and non-judgmental space.</p>
+  </div>
+  <div class="blackline"></div> <!-- Black line separator -->
+</div>
+
+<div class="faq-item">
+  <div class="faq-question">
+    Can AI therapy replace a human therapist?
+  </div>
+  <div class="faq-answer">
+    <p>No, AI therapy is not a replacement for a licensed therapist. It's designed to offer emotional support, self-help strategies, and motivation — especially when you need quick help or can't access a therapist right away.</p>
+  </div>
+  <div class="blackline"></div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-question">
+    What kind of issues can AI therapy help with?
+  </div>
+  <div class="faq-answer">
+    <p>Our AI therapy is designed to support a wide range of emotional and mental wellness needs. It can help you manage stress, anxiety, overthinking, sadness, and loneliness, offering comforting guidance when you feel stuck or emotionally drained. It also helps you improve motivation, self-confidence, and emotional resilience by encouraging positive thinking, setting achievable goals, and helping you reflect on your daily experiences. In addition, the AI provides mindfulness and relaxation exercises to calm your mind, reduce tension, and bring balance to your day. Whether you're struggling with burnout, self-doubt, or just need someone to listen without judgment, the AI is always available — offering thoughtful, research-backed strategies to help you feel more centered, calm, and supported in your emotional journey.</p>
+  </div>
+  <div class="blackline"></div>
+</div>
+  </section>
+
+
+  <div class="social-icons">
+    <a href="https://www.instagram.com/iamproudofyouicare" target="_blank" class="social-icon insta">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/share/1AG9kXGeSx/" target="_blank" class="social-icon fb">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://youtube.com/@iamproudofyouicare?si=6Jj0yxge7wbihLB1" target="_blank" class="social-icon yt">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://x.com/IAmProud0fYou" target="_blank" class="social-icon tw">
+      <i class="fa-brands fa-x-twitter"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/iamproudofyou-icare-062265398" target="_blank" class="social-icon li">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+
+  <div class="word">
+    <p><a href="terms.html" target="_blank">Terms & Conditions</a></p>
+  </div>
+
+  <div class="lasttext">
+    <p>ICare AI Chat Bot is not a licensed psychologist or psychiatrist and should not be considered a substitute for professional mental health care. It is intended for educational and self-improvement purposes only. If you are experiencing a mental health crisis or need professional support, please seek help from a qualified healthcare provider.</p>
+  </div>
+
+  <footer class="footer">
+    &copy; 2025 I Am Proud Of You. All rights reserved.
+  </footer>
   <script>
-    const quotes = [
-      { arabic: "اللَّهُ لَا يُكَلِّفُ نَفْسًا إِلَّا وُسْعَهَا", translation: "Allah does not burden a soul beyond that it can bear. 📖 (Surah Al-Baqarah 2:286)" },
-      { arabic: "فَإِنَّ مَعَ الْعُسْرِ يُسْرًا", translation: "For indeed, with hardship comes ease. 📖 (Surah Ash-Sharh 94:5–6)" },
-      { arabic: "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ", translation: "Indeed, Allah is with those who are patient. 📖 (Surah Al-Baqarah 2:153)" },
-      { arabic: "لَا تَقْنَطُوا مِن رَّحْمَةِ اللَّهِ", translation: "Do not despair of the mercy of Allah. 📖 (Surah Az-Zumar 39:53)" },
-      { arabic: "إِنَّ اللَّهَ يُحِبُّ الْمُحْسِنِينَ", translation: "Indeed, Allah loves the doers of good. 💖 (Surah Al-Baqarah 2:195)" },
-      { arabic: "أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ", translation: "Surely, in the remembrance of Allah do hearts find rest. 📖 (Surah Ar-Ra'd 13:28)" },
-      { arabic: "وَهُوَ مَعَكُمْ أَيْنَ مَا كُنتُمْ", translation: "And He is with you wherever you are. 🌸 (Surah Al-Hadid 57:4)" },
-      { arabic: "وَنَحْنُ أَقْرَبُ إِلَيْهِ مِنْ حَبْلِ الْوَرِيدِ", translation: "And We are closer to him than [his] jugular vein. ❤️ (Surah Qaf 50:16)" },
-      { arabic: "إِنِّي مَعَكُمَا أَسْمَعُ وَأَرَىٰ", translation: "Indeed, I am with you both; I hear and I see. (Surah Taha 20:46)" },
-      { arabic: "وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ", translation: "And whoever puts their trust in Allah – He is sufficient for them. 🌿 (Surah At-Talaq 65:3)" },
-      { arabic: "لَا تَحْزَنْ إِنَّ اللَّهَ مَعَنَا", translation: "Do not be sad; indeed Allah is with us. 🤍 (Surah At-Tawbah 9:40)" },
+  const menuToggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('navbar');
 
-    ];
-
-    // Pick a random quote when the page loads
-    function showRandomQuote() {
-      const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-      const quoteBox = document.getElementById("quoteBox");
-      quoteBox.innerHTML = `<b>${randomQuote.arabic}</b><br><br>${randomQuote.translation}`;
-    }
-
-    // Show a new quote each time the page opens
-    window.onload = showRandomQuote;
-  </script>
-  <script>
-const menuToggle = document.getElementById('menu-toggle');
-const nav = document.getElementById('navbar');
-
-menuToggle.addEventListener('click', () => {
-  if (nav.style.display === "flex") {
-    nav.style.display = "none";  // close menu
-  } else {
-    nav.style.display = "flex";  // open menu
-  }
-});
-
-// Close menu when a link is clicked (mobile)
-nav.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    nav.style.display = "none";
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
   });
-});
 
+  // Optional: close menu when clicking a link
+  const navLinks = nav.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+    });
+  });
 </script>
+
 </body>
 </html>
-
-
-
